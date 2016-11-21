@@ -68,6 +68,6 @@ organizationservice2:
       - "eurekaserver:eurekaserver"
     environment:
       PROFILE: "default"
-      SERVER_PORT: "8085"
+      SERVER_PORT: "8086"
       CONFIGSERVER_URI: "http://configserver:8888"
       EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
