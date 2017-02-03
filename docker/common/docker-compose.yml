@@ -11,6 +11,7 @@ services:
       environment:
          EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
          EUREKASERVER_PORT: "8761"
+         ENCRYPT_KEY:       "IMSYMMETRIC"
   # configserver2:
   #     image: johncarnell/tmx-confsvr:chapter4
   #     ports:
@@ -20,6 +21,7 @@ services:
   #     environment:
   #       EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
   #       EUREKASERVER_PORT:8761
+  #       ENCRYPT_KEY:       "IMSYMMETRIC"
   database:
       image: postgres
       ports:
