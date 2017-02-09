@@ -42,6 +42,7 @@ services:
         EUREKASERVER_PORT:   "8761"
         CONFIGSERVER_PORT:   "8888"
         DATABASESERVER_PORT: "5432"
+        ENCRYPT_KEY:       "IMSYMMETRIC"
   organizationservice:
       image: johncarnell/tmx-organization-service:chapter4
       ports:
@@ -54,6 +55,7 @@ services:
         EUREKASERVER_PORT:   "8761"
         CONFIGSERVER_PORT:   "8888"
         DATABASESERVER_PORT: "5432"
+        ENCRYPT_KEY:       "IMSYMMETRIC"
   organizationservice2:
       image: johncarnell/tmx-organization-service:chapter4
       ports:
@@ -66,3 +68,4 @@ services:
         EUREKASERVER_PORT:   "8761"
         CONFIGSERVER_PORT:   "8888"
         DATABASESERVER_PORT: "5432"
+        ENCRYPT_KEY:       "IMSYMMETRIC"
