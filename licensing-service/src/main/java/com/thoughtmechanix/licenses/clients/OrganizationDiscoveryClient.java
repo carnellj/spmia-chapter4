@@ -22,17 +22,17 @@ public class OrganizationDiscoveryClient {
         RestTemplate restTemplate = new RestTemplate();
         List<ServiceInstance> instances = discoveryClient.getInstances("organizationservice");
 
-        if (instances.size()==0) return null;
-        String serviceUri = String.format("%s/v1/organizations/%s",instances.get(0).getUri().toString(), organizationId);
+        if (instances.size() == 0) return null;
+        String serviceUri = String.format("%s/v1/organizations/%s", instances.get(0).getUri().toString(), organizationId);
         System.out.println("!!!! SERVICE URI:  " + serviceUri);
 
 
-        ResponseEntity< Organization > restExchange =
+        ResponseEntity<Organization> restExchange =
                 restTemplate.exchange(
                         serviceUri,
                         HttpMethod.GET,
                         null, Organization.class, organizationId);
-        
+
         return restExchange.getBody();
     }
 }

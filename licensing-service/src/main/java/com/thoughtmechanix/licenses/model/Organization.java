@@ -1,17 +1,17 @@
 package com.thoughtmechanix.licenses.model;
 
 public class Organization {
-    String id;
-    String name;
-    String contactName;
-    String contactEmail;
-    String contactPhone;
+
+    private String id;
+    private String name;
+    private String contactName;
+    private String contactEmail;
+    private String contactPhone;
 
 
     public String getId() {
         return id;
     }
-
 
     public void setId(String id) {
         this.id = id;
